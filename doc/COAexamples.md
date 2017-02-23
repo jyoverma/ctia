@@ -4,6 +4,7 @@
 
 ## Malicious domain blocking rule -> could be translated to DNS block rule by CDO/OpenDNS
 if sighting.Observable.verdict is MALICIOUS and sighting.Observable.type is "domain" then generateCOA where,
+
 {
   "id": "generatedCOA-2017-02-22T22:43:02.489Z",
   "description": "COA for indicator - Remote Access Trojan (RAT) Sality Network Communications",
@@ -25,7 +26,8 @@ if sighting.Observable.verdict is MALICIOUS and sighting.Observable.type is "dom
 }
  		
 ## Malicious IP blocking rule -> could be translated to firewall ACL by CDO
- 	{
+ 	
+  {
   "id": "https://tenzin-beta.amp.cisco.com:443/ctia/coa/coa-db54bb35-7b28-48da-b3b9-d9620d8d8b98",
   "description": "COA for blocking a Command and control variant",
   "valid_time": {
@@ -63,7 +65,8 @@ if sighting.Observable.verdict is MALICIOUS and sighting.Observable.type is "dom
 }
 
 ## Malicious IP blocking rule -> could be translated to router ACL by APIC-EM
- 	{
+ 	
+  {
   "id": "https://tenzin-beta.amp.cisco.com:443/ctia/coa/coa-db54bb35-7b28-48da-b3b9-d9620d8d8b98",
   "description": "COA for blocking a Command and control variant",
   "valid_time": {
