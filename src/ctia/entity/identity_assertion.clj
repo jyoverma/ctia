@@ -78,8 +78,8 @@
    {:query s/Str
     (s/optional-key :identity.observables.type) s/Str
     (s/optional-key :identity.observables.value) s/Str
-    (s/optional-key :identity-assertion.assertions.name) s/Str
-    (s/optional-key :identity-assertion.assertions.value) s/Str
+    (s/optional-key :assertions.name) s/Str
+    (s/optional-key :assertions.value) s/Str
     (s/optional-key :sort_by) identity-assertion-sort-fields}))
 
 (def IdentityAssertionGetParams IdentityAssertionFieldsParam)
