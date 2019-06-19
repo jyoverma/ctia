@@ -49,7 +49,7 @@
      em/sourcable-entity-mapping
      em/stored-entity-mapping
      {:identity em/sighting-target
-      :identity-assertion em/identity-assertion
+      :assertions em/assertion
       :valid_time em/valid-time})}})
 
 (def-es-store IdentityAssertionStore :identity-assertion StoredIdentityAssertion PartialStoredIdentityAssertion)
